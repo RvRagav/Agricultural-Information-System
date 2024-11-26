@@ -2,12 +2,15 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from "body-parser";
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
 import authroutes from './routes/auth.routes.js';
 import expertroutes from './routes/expert.routes.js';
 import schemeroutes from './routes/schemes.routes.js';
 import priceroutes from './routes/priceupdates.routes.js';
 
+dotenv.config();
+const mongoUri = process.env.MONGO_URI;
 const app = express();
 app.use(express.json());
 app.use(bodyParser.json())
@@ -27,7 +30,10 @@ app.use('/api/expertanalysis',expertroutes)
 app.use('/api/scheme',schemeroutes)
 app.use('/api/price', priceroutes)
 
-mongoose.connect("mongodb+srv://ragavanr738:Ragav%402005@agrowdb.4wgvu.mongodb.net/test?retryWrites=true&w=majority&appName=AgrowDB")
+mongoose.connect(mongoUri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
     .then(() => {
         console.log("Connected to MongoDB");
         const PORT = 3001;
