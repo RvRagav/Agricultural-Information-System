@@ -124,8 +124,8 @@ const Home = () => {
             </div>
 
             {/* Hot News Section */}
-            <div className="hot-news" onClick={() => window.location.href = 'https://example.com/hot-news'}>
-                <a href="https://example.com/hot-news">
+            <div className="hot-news" onClick={() => window.location.href = 'https://krishijagran.com/'}>
+                <a href="https://krishijagran.com/">
                     <div className="scrolling-text">Click here to see the hot news we've for you</div>
                 </a>
             </div>

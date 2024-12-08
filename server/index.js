@@ -42,4 +42,3 @@ mongoose.connect(mongoUri, {
         });
     })
     .catch((err) => console.error("MongoDB connection failed:", err.message));
-
