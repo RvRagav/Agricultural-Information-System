@@ -47,7 +47,7 @@ AGROW is an innovative platform designed to empower farmers by providing real-ti
 5. Start the backend server:
    ```bash
    cd ../server
-   npm start
+   npm run dev
    ```
 6. Start the frontend development server:
    ```bash
