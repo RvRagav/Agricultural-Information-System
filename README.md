@@ -2,7 +2,7 @@
 # **AGROW - Agricultural Information System**
 
 ## **Overview**
-AGROW is an innovative platform designed to empower farmers by providing real-time tools and information essential for modern agriculture. It integrates weather updates, market prices, expert advice, and government schemes into a single, user-friendly system to simplify decision-making and improve productivity in the agricultural sector.
+AGROW is an innovative platform designed to empower farmers by providing real-time information essential for modern agriculture. It integrates weather updates, market prices, expert advice, and government schemes into a single, user-friendly system to simplify decision-making and improve productivity in the agricultural sector.
 
 ---
 
@@ -18,7 +18,6 @@ AGROW is an innovative platform designed to empower farmers by providing real-ti
 - **Frontend**: HTML, CSS, JavaScript, React.js  
 - **Backend**: Node.js, Express.js  
 - **Database**: MongoDB  
-- **Visualization**: NetAnim for network simulations (if applicable to the system's communication model)
 
 ---
 
